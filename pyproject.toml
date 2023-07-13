@@ -10,6 +10,7 @@ packages = [{include = "wise_data_cat"}]
 python = "^3.10"
 numpy = "^1.25.1"
 pandas = "^2.0.3"
+ipython = "^8.14.0"
 
 
 [build-system]
