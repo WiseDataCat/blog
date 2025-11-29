@@ -17,6 +17,7 @@ duckdb = {extras = ["all"], version = "^1.4.2"}
 pgcli = "^4.3.0"
 connectorx = "^0.4.4"
 psycopg = {extras = ["binary"], version = "^3.2.13"}
+parquet-tools = "^0.2.16"
 
 
 [tool.poetry.group.dev.dependencies]
