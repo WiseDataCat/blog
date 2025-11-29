@@ -145,6 +145,35 @@ files = [
 ]
 
 [[package]]
+name = "connectorx"
+version = "0.4.4"
+description = ""
+optional = false
+python-versions = ">=3.10"
+files = [
+    {file = "connectorx-0.4.4-cp310-cp310-macosx_10_7_x86_64.whl", hash = "sha256:58a3f9e05a42066dd8e2f1da6c9bbd18662817eba7968eb88031f4b3365831e0"},
+    {file = "connectorx-0.4.4-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:bcaeb9ccede6bb63e6cc85b8004aef08a2ec4cd128df18390da46bdb2daa378b"},
+    {file = "connectorx-0.4.4-cp310-cp310-manylinux_2_28_x86_64.whl", hash = "sha256:898b7d721324343802da9a754cef9230ff58718d81becdd241aba2603d93bda3"},
+    {file = "connectorx-0.4.4-cp310-cp310-manylinux_2_35_aarch64.whl", hash = "sha256:514663ee140f3c935476f4d4791d4827b673a5f3f83da95f95130031cfa55fc1"},
+    {file = "connectorx-0.4.4-cp310-none-win_amd64.whl", hash = "sha256:0aea4f0afdb243e9b7ca48d10f54bf7479fdb71b53db0593123c2ee91b1a165e"},
+    {file = "connectorx-0.4.4-cp311-cp311-macosx_10_7_x86_64.whl", hash = "sha256:7a2cb89637a3ff2f361c6ecc47f8f8280f86bc079fe7b4e60948e37e8acb6384"},
+    {file = "connectorx-0.4.4-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:40ad3e3130474e19c885adb26d57c056e86179fcc567210e9c1be7593c1355ab"},
+    {file = "connectorx-0.4.4-cp311-cp311-manylinux_2_28_x86_64.whl", hash = "sha256:7321f83f1aa180922c142df8106e4cf6f44123bc9d7be900b126d9e2dc3566cc"},
+    {file = "connectorx-0.4.4-cp311-cp311-manylinux_2_35_aarch64.whl", hash = "sha256:c7265ab1f9e12f767e9b5523f497147ff82f7d079ace692069d08b98d06e3843"},
+    {file = "connectorx-0.4.4-cp311-none-win_amd64.whl", hash = "sha256:ca59b6d594e652700840564a05b6f0cb626c3dbaba928bc84e1c2ebafd46c077"},
+    {file = "connectorx-0.4.4-cp312-cp312-macosx_10_7_x86_64.whl", hash = "sha256:11aab42c72bd4e8913db815b9c93f5e2ee27646ad3243bae0d0f3866759e75d4"},
+    {file = "connectorx-0.4.4-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:848fd58e696e7291280e1b58e15a6a036f07b53cf8dd014d04732255d7d6985e"},
+    {file = "connectorx-0.4.4-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:9f458f521dd143d37ddc2d6614f8014191b736b13cb5824d3aef8a0f487ea8fa"},
+    {file = "connectorx-0.4.4-cp312-cp312-manylinux_2_35_aarch64.whl", hash = "sha256:c30ccbaf5b2549c47fda96092622568a47b73e9db31dd3d385a472f2b6d07629"},
+    {file = "connectorx-0.4.4-cp312-none-win_amd64.whl", hash = "sha256:dcf4fb9d1e94ebe0bb4b72a18aeba119895d2fa66b4fe69a8ece97942748c3b0"},
+    {file = "connectorx-0.4.4-cp313-cp313-macosx_10_7_x86_64.whl", hash = "sha256:3bf1498e662a5461ba27f8a90d04ff67fddc9bf9d8d9d9687db037a89202fcf7"},
+    {file = "connectorx-0.4.4-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:cf4c94bc74db19262b6e8fa72f4df92c5ad7249212863400be66300564f89f09"},
+    {file = "connectorx-0.4.4-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:66a07c5215aed34a101137e7cc8c4509939974cad60faebb19972d73c1960d82"},
+    {file = "connectorx-0.4.4-cp313-cp313-manylinux_2_35_aarch64.whl", hash = "sha256:f1b4fe628623db5dd99713e9195c8cd9cc63a6d2aff206a47ff87d719806836e"},
+    {file = "connectorx-0.4.4-cp313-none-win_amd64.whl", hash = "sha256:ef6ce2e95d04163862c1a2e5a673ae6371d74a3ca66a4e3fec4a7c281944b102"},
+]
+
+[[package]]
 name = "decorator"
 version = "5.1.1"
 description = "Decorators for Humans"
@@ -549,7 +578,9 @@ files = [
 ]
 
 [package.dependencies]
+psycopg-binary = {version = "3.2.13", optional = true, markers = "implementation_name != \"pypy\" and extra == \"binary\""}
 typing-extensions = {version = ">=4.6", markers = "python_version < \"3.13\""}
+tzdata = {version = "*", markers = "sys_platform == \"win32\""}
 
 [package.extras]
 binary = ["psycopg-binary (==3.2.13)"]
@@ -1057,4 +1088,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "e0812bd6fcf18350f5b361d060a5a3b0d4e0c795802429b3ec9eb88e1289534b"
+content-hash = "1773528e600b6dcc975f933039644a816ea1a57b7f9e04d721f9bdeb4bc4e17d"
